@@ -1,0 +1,16 @@
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\ToDo.Infrastructure.deps.json
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\ToDo.Infrastructure.dll
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\ToDo.Infrastructure.pdb
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\ToDo.Core.dll
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\ToDo.Core.pdb
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.csproj.AssemblyReference.cache
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.AssemblyInfoInputs.cache
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.AssemblyInfo.cs
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.csproj.CoreCompileInputs.cache
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.csproj.CopyComplete
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.dll
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.pdb
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\ToDo.Infrastructure.runtimeconfig.json
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\bin\Debug\netcoreapp3.1\ToDo.Infrastructure.runtimeconfig.dev.json
+C:\LAURA SOFIA\ToDoAPI\ToDo.Infrastructure\obj\Debug\netcoreapp3.1\ToDo.Infrastructure.genruntimeconfig.cache
