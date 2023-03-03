@@ -36,17 +36,33 @@ namespace ToDoAPI.Infrastructure.Repositories
 
         public async Task InsertToDos(ToDo todo)
         {
-            _context.ToDo.Add(todo);
-            await _context.SaveChangesAsync();
+            try
+            {
+
+                _context.ToDo.Add(todo);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw;
+
+            }
         }
 
         public async Task<bool> UpdateToDo(ToDo todo)
         {
-            var currentTodo = await GetToDos(todo.Id);
-            currentTodo.Completado = todo.Completado;
+            try
+            {
+                var currentTodo = await GetToDos(todo.Id);
+                currentTodo.Completado = todo.Completado;
 
-           int rows = await _context.SaveChangesAsync();
-            return rows > 0;
+                int rows = await _context.SaveChangesAsync();
+                return rows > 0;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
     }
 }
