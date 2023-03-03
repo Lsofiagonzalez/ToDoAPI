@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace ToDoAPI.Core.Entitities
 {
-   public class ToDo
+
+    public partial class ToDo
     {
-        public int id { get; set; }
-        public string titulo { get; set; }
+        public int Id { get; set; }
 
-        public DateTime fecha { get; set; }
+        public string Titulo { get; set; }
 
-        public bool completado { get; set; }
+        public DateTime FechaCreacion { get; set; }
+
+        public bool Completado { get; set; }
     }
-
 }

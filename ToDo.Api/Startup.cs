@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -11,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ToDoAPI.Core.Interfaces;
+using ToDoAPI.Infrastructure.Data;
 using ToDoAPI.Infrastructure.Repositories;
 
 
@@ -31,6 +33,11 @@ namespace ToDoAPI.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddDbContext<DbtoDoContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("ToDo"))
+            );
+
             services.AddTransient<IToDoRepository, ToDoRepository>();
         }
 

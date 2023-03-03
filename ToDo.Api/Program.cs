@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ToDoAPI.Api;
 
-namespace ToDo.Api
+namespace ToDoApi.Api
 {
     public class Program
     {

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2EgyDXbcjDnWuceNK+tarN+V1wfuN0E2FsEItNGL280cWKBEoC1iFbLwea5deEH73zmMz9GT75ZDjJ0dG0vheg==",
+  "dgSpecHash": "KZ74BCKrvHtkdnbqUYEjUOTwZKP/uQ27SGcxgAtWw2qhk7v+hLa1Yfr6auoHPg8TgJ7T2vHlrfVtbsyoNuVT9g==",
   "success": true,
-  "projectFilePath": "C:\\LAURA SOFIA\\ToDoAPI\\ToDo.Core\\ToDo.Core.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\lsgon\\source\\repos\\ToDoAPI\\ToDo.Core\\ToDo.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lsgon\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\lsgon\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\lsgon\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
   "logs": []
 }

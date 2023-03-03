@@ -6,24 +6,47 @@ using System.Linq;
 using System.Text;
 using ToDoAPI.Core.Interfaces;
 using System.Threading.Tasks;
+using ToDoAPI.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace ToDoAPI.Infrastructure.Repositories
 {
    public class ToDoRepository : IToDoRepository
     {
+        private readonly DbtoDoContext _context;
+
+        public ToDoRepository(DbtoDoContext context)
+        {
+            _context = context;
+        }
         public async Task<IEnumerable<ToDo>> GetToDos()
         {
-            var todo = Enumerable.Range(1, 10).Select(x => new ToDo
-            {
-                id = x,
-                titulo = $"titulo{x}",
-                fecha = DateTime.Now,
-                completado = true
-
-            });
-            await Task.Delay(10);
+            var todo = await _context.ToDo.ToListAsync();
             return todo;
             ;
+        }
+
+        public async Task<ToDo> GetToDos(int id)
+        {
+            var todo = await _context.ToDo.FirstOrDefaultAsync(x=> x.Id == id);
+            return todo;
+            ;
+        }
+
+        public async Task InsertToDos(ToDo todo)
+        {
+            _context.ToDo.Add(todo);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<bool> UpdateToDo(ToDo todo)
+        {
+            var currentTodo = await GetToDos(todo.Id);
+            currentTodo.Completado = todo.Completado;
+
+           int rows = await _context.SaveChangesAsync();
+            return rows > 0;
         }
     }
 }

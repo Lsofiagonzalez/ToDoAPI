@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace ToDo.IntegrationTests
+namespace ToDoAPI.IntegrationTests
 {
     public class UnitTest1
     {
